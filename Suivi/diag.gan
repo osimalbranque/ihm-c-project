@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-05-27" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.0" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-05-27" view-index="0" gantt-divider-location="395" resource-divider-location="300" version="2.0" locale="fr_FR">
     <description/>
     <view zooming-state="default:0" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="57" order="0"/>
-        <field id="tpd4" name="Date de début" width="21" order="1"/>
-        <field id="tpd5" name="Date de fin" width="21" order="2"/>
+        <field id="tpd3" name="Nom" width="55" order="0"/>
+        <field id="tpd4" name="Date de début" width="22" order="1"/>
+        <field id="tpd5" name="Date de fin" width="22" order="2"/>
+        <option id="taskLabelUp" value="advancement"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nom" width="52" order="0"/>
-        <field id="1" name="Rôle par défaut" width="47" order="1"/>
+        <field id="0" name="Nom" width="50" order="0"/>
+        <field id="1" name="Rôle par défaut" width="49" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -35,24 +37,38 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="7" name="Créer le modèle" meeting="false" start="2014-05-27" duration="1" complete="80" expand="true">
+        <task id="7" name="Créer le modèle" meeting="false" start="2014-05-27" duration="1" complete="68" expand="true">
             <task id="1" name="Créer cl. Key" color="#8cb6ce" meeting="false" start="2014-05-27" duration="1" complete="100" expand="true"/>
             <task id="0" name="Créer cl. Table" color="#8cb6ce" meeting="false" start="2014-05-27" duration="1" complete="100" expand="true"/>
             <task id="2" name="Créer cl. ForeignKey" color="#8cb6ce" meeting="false" start="2014-05-27" duration="1" complete="100" expand="true"/>
             <task id="3" name="Créer cl. Field" color="#8cb6ce" meeting="false" start="2014-05-27" duration="1" complete="100" expand="true"/>
-            <task id="6" name="Créer cl. Constraint" color="#8cb6ce" meeting="false" start="2014-05-27" duration="1" complete="0" expand="true"/>
+            <task id="6" name="Créer cl. Constraint" color="#8cb6ce" meeting="false" start="2014-05-27" duration="1" complete="10" expand="true"/>
         </task>
         <task id="8" name="Créer la vue" meeting="false" start="2014-05-27" duration="1" complete="0" expand="true">
             <task id="9" name="Créer l'interface (V.Studio)" meeting="false" start="2014-05-27" duration="1" complete="0" expand="true"/>
             <task id="10" name="Créer cl. Schema" meeting="false" start="2014-05-27" duration="1" complete="0" expand="true"/>
             <task id="11" name="Créer cl. TableView" meeting="false" start="2014-05-27" duration="1" complete="0" expand="true"/>
         </task>
+        <task id="13" name="Installation de programmes/composants" color="#000000" meeting="false" start="2014-05-29" duration="2" complete="25" expand="true">
+            <task id="16" name="Compte GitHub" color="#8cb6ce" meeting="false" start="2014-05-29" duration="2" complete="50" expand="true"/>
+            <task id="15" name="GanttProject" color="#8cb6ce" meeting="false" start="2014-05-29" duration="2" complete="50" expand="true"/>
+            <task id="14" name="SourceTree" color="#8cb6ce" meeting="false" start="2014-05-29" duration="2" complete="0" expand="true"/>
+            <task id="17" name="ADO.NET Entity Framework" color="#8cb6ce" meeting="false" start="2014-05-29" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="30" name="Fin projet" color="#8cb6ce" meeting="false" start="2014-05-27" duration="14" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Julien Bordagaray" function="SoftwareDevelopment:2" contacts="" phone=""/>
         <resource id="1" name="Osiris Malbranque" function="SoftwareDevelopment:2" contacts="" phone=""/>
     </resources>
-    <allocations/>
+    <allocations>
+        <allocation task-id="16" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+    </allocations>
     <vacations>
         <vacation start="2014-05-28" end="2014-06-03" resourceid="0"/>
     </vacations>
@@ -66,9 +82,9 @@
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="199" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="75" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="75" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="208" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="84" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="84" visible="true"/>
     </taskdisplaycolumns>
     <previous>
         <previous-tasks name="May27th2014">
@@ -82,6 +98,23 @@
             <previous-task id="9" start="2014-05-27" duration="1" meeting="false" super="false"/>
             <previous-task id="10" start="2014-05-27" duration="1" meeting="false" super="false"/>
             <previous-task id="11" start="2014-05-27" duration="1" meeting="false" super="false"/>
+        </previous-tasks>
+        <previous-tasks name="May29th2014">
+            <previous-task id="7" start="2014-05-27" duration="1" meeting="false" super="true"/>
+            <previous-task id="1" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="0" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="2" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="3" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="6" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="8" start="2014-05-27" duration="1" meeting="false" super="true"/>
+            <previous-task id="9" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="10" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="11" start="2014-05-27" duration="1" meeting="false" super="false"/>
+            <previous-task id="13" start="2014-05-29" duration="2" meeting="false" super="true"/>
+            <previous-task id="14" start="2014-05-29" duration="2" meeting="false" super="false"/>
+            <previous-task id="15" start="2014-05-29" duration="2" meeting="false" super="false"/>
+            <previous-task id="16" start="2014-05-29" duration="2" meeting="false" super="false"/>
+            <previous-task id="17" start="2014-05-29" duration="2" meeting="false" super="false"/>
         </previous-tasks>
     </previous>
     <roles roleset-name="Default"/>
